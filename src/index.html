@@ -7,7 +7,7 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero-left">
             <div class="hero-left__top">
@@ -76,10 +76,10 @@
             />
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- HISTORY -->
-      <section class="history">
+      <!-- <section class="history">
         <div class="container">
           <div class="history-content">
             <div class="history-top">
@@ -150,10 +150,10 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- NFTS -->
-      <section class="nfts">
+      <!-- <section class="nfts">
         <div class="container">
           <div class="nfts-content">
             <h2 class="title nfts-content__title">Create And Sell Your NFTS</h2>
@@ -192,10 +192,10 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- GALLERY -->
-      <section class="gallery">
+      <!-- <section class="gallery">
         <div class="container">
           <div class="gallery-content">
             <h2 class="title">Top Galleries</h2>
@@ -237,7 +237,7 @@
                     </h3>
                     <p class="gallery-list-bottom__text">Gallery</p>
                   </div>
-                  <a class="gallery-list-bottom__link" href="#">
+                  <span class="gallery-list-bottom__span">
                     <svg
                       class="gallery-list-bottom__svg"
                       width="20"
@@ -245,7 +245,7 @@
                     >
                       <use href="@img/img/admin.svg#icon-right-line"></use>
                     </svg>
-                  </a>
+                  </span>
                 </div>
               </li>
               <li class="gallery-list__item">
@@ -284,7 +284,7 @@
                     </h3>
                     <p class="gallery-list-bottom__text">Gallery</p>
                   </div>
-                  <a class="gallery-list-bottom__link" href="#">
+                  <span class="gallery-list-bottom__span">
                     <svg
                       class="gallery-list-bottom__svg"
                       width="20"
@@ -292,7 +292,7 @@
                     >
                       <use href="@img/img/admin.svg#icon-right-line"></use>
                     </svg>
-                  </a>
+                  </span>
                 </div>
               </li>
               <li class="gallery-list__item">
@@ -331,7 +331,7 @@
                     </h3>
                     <p class="gallery-list-bottom__text">Gallery</p>
                   </div>
-                  <a class="gallery-list-bottom__link" href="#">
+                  <span class="gallery-list-bottom__span">
                     <svg
                       class="gallery-list-bottom__svg"
                       width="20"
@@ -339,7 +339,7 @@
                     >
                       <use href="@img/img/admin.svg#icon-right-line"></use>
                     </svg>
-                  </a>
+                  </span>
                 </div>
               </li>
             </ul>
@@ -349,10 +349,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- SELLER -->
-      <section class="seller">
+      <!-- <section class="seller">
         <div class="container">
           <div class="seller-content">
             <h2 class="title">Top Seller</h2>
@@ -449,10 +449,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- BLOG -->
-      <section class="blog">
+      <!-- <section class="blog">
         <div class="container">
           <div class="blog-content">
             <h2 class="title">Our Latest Blog</h2>
@@ -611,11 +611,23 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     @@include('html/footer.html',{})
 
+    <!-- BACKDROP-MODAL -->
+    <div class="backdrop backdrop__is-hidden" data-modal>
+      <div class="backdrop-modal">
+        <div class="modal-form">
+          <button class="modal-form__btn" data-modal-close>
+            <span class="modal-form__cross"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="js/app.min.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

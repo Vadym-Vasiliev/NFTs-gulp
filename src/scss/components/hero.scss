@@ -9,30 +9,51 @@
       width: 499px;
       left: 681px;
       bottom: -59px;
+
+      @include desktop-min {
+        z-index: -1;
+        left: 440px;
+      }
     }
 
     &--cat {
       width: 140px;
       left: 615px;
       top: -58px;
+
+      @include desktop-min {
+        left: 500px;
+      }
     }
 
     &--purple {
       width: 72px;
       left: 916px;
       top: -58px;
+
+      @include desktop-min {
+        display: none;
+      }
     }
 
     &--green {
       width: 248px;
       left: 1073px;
       top: 0;
+
+      @include desktop-min {
+        left: 665px;
+      }
     }
 
     &--red {
       width: 130px;
       left: 1231px;
       bottom: 20px;
+
+      @include desktop-min {
+        left: 765px;
+      }
     }
   }
 }
