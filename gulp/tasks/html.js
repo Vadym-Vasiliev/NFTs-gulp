@@ -19,14 +19,14 @@ export const html = () => {
         indent: true,
       })
     )
-    .pipe(
-      pug({
-        //Стискання HTML файла
-        pretty: true,
-        //Показує в терміналі який файл оброблений
-        verbose: true,
-      })
-    )
+    // .pipe(
+    //   pug({
+    //     //Стискання HTML файла
+    //     pretty: true,
+    //     //Показує в терміналі який файл оброблений
+    //     verbose: true,
+    //   })
+    // )
     .pipe(app.plugins.replace(/@img\//g, "img/"))
     .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 

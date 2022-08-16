@@ -1,16 +1,760 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/style.min.css" />
-<title>Головна</title>
-</head>
-<body>
-<header></header>
-<main></main>
-<footer></footer>
-<script src="js/app.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@400;600&family=Ruda:wght@600;700&display=swap" 
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>NFTs</title>
+  </head>
+
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a class="header-content__link" href="#">
+            <img 
+            class="header-content__img" 
+            src="img/header-logo.png" />
+            NFTs
+          </a>
+          <ul class="header-list">
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Home</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Market</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Artists</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Community</a>
+            </li>
+            <li class="header-list__item">
+              <a class="header-list__link" href="#">Wallet</a>
+            </li>
+          </ul>
+          <div class="header-btns">
+            <button class="btn header-btns__btns header-btns__btns--login" type="button">Login</button>
+            <button class="btn header-btns__btns header-btns__btns--sing" type="button">Sing Up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-left">
+            <div class="hero-left__top">
+              <h1 class="hero-left__title">
+                Buy and Sell Digital Art,<br />
+                <span class="hero-left__span">NFT </span> Collection
+              </h1>
+              <p class="hero-left__text">
+                Lorem ipsum dolor sit amet, consectetur adipisc elit amet.
+                Consectetu at it lrorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="hero-left__center">
+              <button class="btn hero-left__btn" type="button">Explore</button>
+              <a class="hero-left__link" href="#">
+                <span class="hero-left__border-svg">
+                  <svg width="16" height="16">
+                    <use href="img/img/admin.svg#icon-play"></use>
+                  </svg>
+                </span>
+
+                <span class="hero-left__watch"> Watch Video </span>
+              </a>
+            </div>
+            <div class="hero-left__bottom">
+              <ul class="hero-list">
+                <li class="hero-list__item">
+                  <span class="hero-list__span">80K+</span>
+                  <p class="hero-list__text">Active user</p>
+                </li>
+                <li class="hero-list__item">
+                  <span class="hero-list__span">27K+</span>
+                  <p class="hero-list__text">Artworks</p>
+                </li>
+                <li class="hero-list__item">
+                  <span class="hero-list__span">3.5K+</span>
+                  <p class="hero-list__text">Artists</p>
+                </li>
+              </ul>
+            </div>
+
+            <img
+              class="hero__img hero__img--big"
+              src="./img/hero-big.png"
+              alt="img"
+            />
+            <img
+              class="hero__img hero__img--cat"
+              src="img/hero-cat.png"
+              alt="img"
+            />
+            <img
+              class="hero__img hero__img--purple"
+              src="img/hero-purple.png"
+              alt="img"
+            />
+            <img
+              class="hero__img hero__img--green"
+              src="img/hero-green.png"
+              alt="img"
+            />
+            <img
+              class="hero__img hero__img--red"
+              src="img/hero-red.png"
+              alt="img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- HISTORY -->
+      <section class="history">
+        <div class="container">
+          <div class="history-content">
+            <div class="history-top">
+              <h2 class="history-top__title">Learn History</h2>
+              <p class="history-top__text">
+                Lorem ipsum dolor sit amet, consectet adipisc elit amet.
+              </p>
+              <button class="btn history-top__btn" type="button">
+                See More
+                <svg class="history-top__svg" width="32" height="32">
+                  <use href="img/img/admin.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="history-bottom">
+              <div class="history-left">
+                <img class="history-left__img" src="img/history1.png" />
+
+                <div class="history-left__bgc">
+                  <div class="history-left__border">
+                    <span class="history-left__views">12K+</span>
+                    <span class="history-left__name">Statue</span>
+                  </div>
+                </div>
+              </div>
+              <div class="history-right">
+                <div class="history-right__content">
+                  <img
+                    class="history-right__img"
+                    src="img/history2.png"
+                    alt="img"
+                  />
+                  <div class="history-right__under-img">
+                    <svg class="history-right__svg" width="24" height="24">
+                      <use href="img/img/admin.svg#icon-eye"></use>
+                    </svg>
+                    <span class="history-right__views">17,512 Views</span>
+                  </div>
+                </div>
+                <div class="history-right__content">
+                  <img
+                    class="history-right__img"
+                    src="img/history3.png"
+                    alt="img"
+                  />
+                  <div class="history-right__under-img">
+                    <svg class="history-right__svg" width="24" height="24">
+                      <use href="img/img/admin.svg#icon-eye"></use>
+                    </svg>
+                    <span class="history-right__views">17,512 Views</span>
+                  </div>
+                </div>
+                <div class="history-right__content">
+                  <img
+                    class="history-right__img"
+                    src="img/history4.png"
+                    alt="img"
+                  />
+                  <div class="history-right__under-img">
+                    <svg class="history-right__svg" width="24" height="24">
+                      <use href="img/img/admin.svg#icon-eye"></use>
+                    </svg>
+                    <span class="history-right__views">17,512 Views</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NFTS -->
+      <section class="nfts">
+        <div class="container">
+          <div class="nfts-content">
+            <h2 class="title nfts-content__title">Create And Sell Your NFTS</h2>
+
+            <ul class="nfts-list">
+              <li class="nfts-list__item">
+                <a class="nfts-list__link" href="#"></a>
+                <img class="nfts-list__img" src="img/nfts1.png" alt="img" />
+
+                <h3 class="nfts-list__title">Set Up Your Wallet</h3>
+                <p class="nfts-list__text">
+                  Lorem ipsum dolor sit amet, consectet adipisc elit amet. Lorem
+                  ipsum dolor sit amet, consectet adipisc.
+                </p>
+              </li>
+              <li class="nfts-list__item">
+                <a class="nfts-list__link" href="#"></a>
+                <img class="nfts-list__img" src="img/nfts2.png" alt="img" />
+
+                <h3 class="nfts-list__title">Create Your Collection</h3>
+                <p class="nfts-list__text">
+                  Lorem ipsum dolor sit amet, consectet adipisc elit amet. Lorem
+                  ipsum dolor sit amet, consectet adipisc.
+                </p>
+              </li>
+              <li class="nfts-list__item">
+                <a class="nfts-list__link" href="#"></a>
+                <img class="nfts-list__img" src="img/nfts3.png" alt="img" />
+
+                <h3 class="nfts-list__title">Add Your NFTs</h3>
+                <p class="nfts-list__text">
+                  Lorem ipsum dolor sit amet, consectet adipisc elit amet. Lorem
+                  ipsum dolor sit amet, consectet adipisc.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery-content">
+            <h2 class="title">Top Galleries</h2>
+
+            <ul class="gallery-list">
+              <li class="gallery-list__item">
+                <a class="gallery-list__link" href="#"></a>
+                <div class="gallery-list-top">
+                  <img
+                    class="gallery-list-top__img gallery-list-top__img--active"
+                    src="img/gallery1-1.jpg"
+                    alt="img"
+                  />
+                  <div class="gallery-list-top__right">
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery1-2.jpg"
+                      alt="img"
+                    />
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery1-3.jpg"
+                      alt="img"
+                    />
+                    <div class="gallery-list-top__border">
+                      <img
+                        class="gallery-list-top__img"
+                        src="img/gallery1-4.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <span class="gallery-list-top__views">+60</span>
+                  </div>
+                </div>
+                <div class="gallery-list-bottom">
+                  <div class="gallery-list-bottom__left">
+                    <h3 class="gallery-list-bottom__title">
+                      Vactor Abstract Character
+                    </h3>
+                    <p class="gallery-list-bottom__text">Gallery</p>
+                  </div>
+                  <a class="gallery-list-bottom__link" href="#">
+                    <svg
+                      class="gallery-list-bottom__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/img/admin.svg#icon-right-line"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <a class="gallery-list__link" href="#"></a>
+                <div class="gallery-list-top">
+                  <img
+                    class="gallery-list-top__img gallery-list-top__img--active"
+                    src="img/gallery2-1.jpg"
+                    alt="img"
+                  />
+                  <div class="gallery-list-top__right">
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery2-2.jpg"
+                      alt="img"
+                    />
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery2-3.jpg"
+                      alt="img"
+                    />
+                    <div class="gallery-list-top__border">
+                      <img
+                        class="gallery-list-top__img"
+                        src="img/gallery2-4.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <span class="gallery-list-top__views">+36</span>
+                  </div>
+                </div>
+                <div class="gallery-list-bottom">
+                  <div class="gallery-list-bottom__left">
+                    <h3 class="gallery-list-bottom__title">
+                      Amazing Character
+                    </h3>
+                    <p class="gallery-list-bottom__text">Gallery</p>
+                  </div>
+                  <a class="gallery-list-bottom__link" href="#">
+                    <svg
+                      class="gallery-list-bottom__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/img/admin.svg#icon-right-line"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+              <li class="gallery-list__item">
+                <a class="gallery-list__link" href="#"></a>
+                <div class="gallery-list-top">
+                  <img
+                    class="gallery-list-top__img gallery-list-top__img--active"
+                    src="img/gallery3-1.jpg"
+                    alt="img"
+                  />
+                  <div class="gallery-list-top__right">
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery3-2.jpg"
+                      alt="img"
+                    />
+                    <img
+                      class="gallery-list-top__img"
+                      src="img/gallery3-3.jpg"
+                      alt="img"
+                    />
+                    <div class="gallery-list-top__border">
+                      <img
+                        class="gallery-list-top__img"
+                        src="img/gallery3-4.jpg"
+                        alt="img"
+                      />
+                    </div>
+                    <span class="gallery-list-top__views">+20</span>
+                  </div>
+                </div>
+                <div class="gallery-list-bottom">
+                  <div class="gallery-list-bottom__left">
+                    <h3 class="gallery-list-bottom__title">
+                      Vactor Abstract Character
+                    </h3>
+                    <p class="gallery-list-bottom__text">Gallery</p>
+                  </div>
+                  <a class="gallery-list-bottom__link" href="#">
+                    <svg
+                      class="gallery-list-bottom__svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="img/img/admin.svg#icon-right-line"></use>
+                    </svg>
+                  </a>
+                </div>
+              </li>
+            </ul>
+
+            <button class="btn gallery-content__btn" type="button">
+              See All
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELLER -->
+      <section class="seller">
+        <div class="container">
+          <div class="seller-content">
+            <h2 class="title">Top Seller</h2>
+
+            <ul class="seller-list">
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller1.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Riponahmed001</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller2.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Mukterhossain</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller3.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Jalalahmed12</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller4.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Samiya0321</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller5.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Jalalahmed12</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+              <li class="seller-list__item">
+                <a class="seller-list__link" href="#"></a>
+                <img
+                  class="seller-list__img"
+                  src="img/seller6.png"
+                  alt="img"
+                />
+                <div class="seller-list__content">
+                  <h3 class="seller-list__title">Sofiyakhan54</h3>
+                  <p class="seller-list__text">40 Artworks</p>
+                </div>
+              </li>
+            </ul>
+            <button
+              class="seller-content__btn seller-content__btn--left"
+              type="button"
+            >
+              <svg class="seller-content__svg" width="24" height="24">
+                <use href="img/img/admin.svg#icon-btn-left"></use>
+              </svg>
+            </button>
+            <button
+              class="seller-content__btn seller-content__btn--right"
+              type="button"
+            >
+              <svg class="seller-content__svg" width="24" height="24">
+                <use href="img/img/admin.svg#icon-btn-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section class="blog">
+        <div class="container">
+          <div class="blog-content">
+            <h2 class="title">Our Latest Blog</h2>
+
+            <ul class="blog-list">
+              <li class="blog-list__item">
+                <img class="blog-list__img" src="./img/blog1.jpg" alt="img" />
+                <div class="blog-list__content">
+                  <div class="blog-list-top">
+                    <div class="blog-list-top__border-svg">
+                      <svg class="blog-list-top__svg" width="15" height="15">
+                        <use href="img/img/admin.svg#icon-admin"></use>
+                      </svg>
+                    </div>
+                    <span class="blog-list-top__position">Admin </span>
+                    <span class="blog-list-top__data">12 May 2022</span>
+                  </div>
+                  <div class="blog-list-center">
+                    <h3 class="blog-list-center__title">
+                      Homeland Supplier Corporation
+                    </h3>
+                    <p class="blog-list-center__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      amet. Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="blog-list-bottom">
+                    <button class="btn blog-list-bottom__btn" type="button">
+                      Read More
+                    </button>
+                    <div class="blog-list-bottom__right">
+                      <div class="blog-list-bottom__wrap-svg">
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-comment"></use>
+                          </svg>
+                        </a>
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-setting"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-list__item">
+                <img class="blog-list__img" src="img/blog2.jpg" alt="img" />
+                <div class="blog-list__content">
+                  <div class="blog-list-top">
+                    <div class="blog-list-top__border-svg">
+                      <svg class="blog-list-top__svg" width="15" height="15">
+                        <use href="img/img/admin.svg#icon-admin"></use>
+                      </svg>
+                    </div>
+                    <span class="blog-list-top__position">Admin </span>
+                    <span class="blog-list-top__data">12 May 2022</span>
+                  </div>
+                  <div class="blog-list-center">
+                    <h3 class="blog-list-center__title">
+                      Amazing Character Corporation
+                    </h3>
+                    <p class="blog-list-center__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      amet.Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="blog-list-bottom">
+                    <button class="btn blog-list-bottom__btn" type="button">
+                      Read More
+                    </button>
+                    <div class="blog-list-bottom__right">
+                      <div class="blog-list-bottom__wrap-svg">
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-comment"></use>
+                          </svg>
+                        </a>
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-setting"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-list__item">
+                <img class="blog-list__img" src="img/blog3.jpg" alt="img" />
+                <div class="blog-list__content">
+                  <div class="blog-list-top">
+                    <div class="blog-list-top__border-svg">
+                      <svg class="blog-list-top__svg" width="15" height="15">
+                        <use href="img/img/admin.svg#icon-admin"></use>
+                      </svg>
+                    </div>
+                    <span class="blog-list-top__position">Admin </span>
+                    <span class="blog-list-top__data">12 May 2022</span>
+                  </div>
+                  <div class="blog-list-center">
+                    <h3 class="blog-list-center__title">
+                      Vactor Abstract Character
+                    </h3>
+                    <p class="blog-list-center__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      amet. Lorem ipsum dolor sit amet.
+                    </p>
+                  </div>
+                  <div class="blog-list-bottom">
+                    <button class="btn blog-list-bottom__btn" type="button">
+                      Read More
+                    </button>
+                    <div class="blog-list-bottom__right">
+                      <div class="blog-list-bottom__wrap-svg">
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-comment"></use>
+                          </svg>
+                        </a>
+                        <a class="blog-list-bottom__border-svg" href="#">
+                          <svg
+                            class="blog-list-bottom__svg"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/img/admin.svg#icon-setting"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <h3 class="footer-list__title">Newsletter</h3>
+              <p class="footer-list__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.
+              </p>
+              <ul class="footer-soclist">
+                <li class="footer-soclist__item">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__svg" width="16" height="16">
+                      <use href="img/img/admin.svg#icon-insta"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soclist__item">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__svg" width="16" height="16">
+                      <use href="img/img/admin.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-soclist__item">
+                  <a class="footer-soclist__link" href="#">
+                    <svg class="footer-soclist__svg" width="16" height="16">
+                      <use href="img/img/admin.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-list__item">
+              <h3 class="footer-list__title">Marketplace</h3>
+              <ul class="footer-list-secondary">
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">All NFTs</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Art</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Music</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Domain Names</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-list__item">
+              <h3 class="footer-list__title">Resources</h3>
+              <ul class="footer-list-secondary">
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Home</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Partners</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Suggestions</a>
+                </li>
+                <li class="footer-list-secondary__item">
+                  <a class="footer-list-secondary__link" href="#">Discord</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-list__item">
+              <h3 class="footer-list__title">Join Our Newsletter</h3>
+              <p class="footer-list__text footer-list__text--second">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit amet.Lorem
+                ipsum dolor sit amet, consectetur.
+              </p>
+              <div class="footer-list__form">
+                <label class="footer-list__label">
+                  <input
+                    class="footer-list__input"
+                    type="email"
+                    name="mail"
+                    placeholder="Enter email..."
+                  />
+                </label>
+                <button class="footer-list__btn" type="submit">
+                  <svg class="footer-list__svg" width="24" height="24">
+                    <use href="img/img/admin.svg#icon-plane"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

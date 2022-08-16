@@ -1,0 +1,134 @@
+.blog {
+  padding-bottom: 148px;
+}
+
+.blog-content {
+  position: relative;
+}
+
+.blog-list {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  &__item {
+    max-width: 388px;
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 34, 228, 0.65);
+  }
+
+  &__img {
+    width: 338px;
+    border-radius: 4px;
+    margin-bottom: 17px;
+  }
+}
+
+.blog-list-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &__border-svg {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1.2px solid #681bf2;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg {
+    stroke: rgba(187, 33, 230, 1);
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.37;
+
+    background: linear-gradient(95.85deg, #ba21e7 5.52%, #bb21e6 95.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__data {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.35;
+    margin-left: auto;
+
+    color: $gray;
+  }
+}
+
+.blog-list-center {
+  margin-bottom: 25px;
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    margin-bottom: 16px;
+
+    color: $white;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: $gray;
+  }
+}
+
+.blog-list-bottom {
+  display: flex;
+  align-items: center;
+  &__btn {
+    padding: 16px 20px;
+    transition: background-color 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: rgba(137, 64, 255, 0.337254902);
+    }
+  }
+
+  &__right {
+    margin-left: auto;
+  }
+
+  &__wrap-svg {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__border-svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.2px solid rgba(182, 33, 231, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: border-radius 250ms linear;
+
+    &:hover,
+    &:focus {
+      border-radius: 4px;
+      border-color: rgb(182, 33, 231);
+
+      .blog-list-bottom__svg {
+        stroke: rgb(182, 33, 231);
+      }
+    }
+  }
+
+  &__svg {
+    transition: stroke 250ms linear;
+    stroke: rgba(182, 33, 231, 0.73);
+  }
+}

@@ -1,9 +1,16 @@
+@import "./normalize/normalize";
+@import "./utils/reset";
+@import "./utils/mixin";
+@import "./utils/vars";
 @import "fonts";
 
-body {
-  font-family: Montserrat-Ace;
-  background-color: skyblue;
-  p {
-    color: black;
-  }
-}
+@import './components/general';
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/history";
+@import "./components/nfts";
+@import "./components/gallery";
+@import "./components/seller";
+@import "./components/blog";
+@import "./components/footer";
