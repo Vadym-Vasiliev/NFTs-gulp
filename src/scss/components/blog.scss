@@ -1,5 +1,9 @@
 .blog {
   padding-bottom: 148px;
+
+  @include mobile {
+    padding-bottom: 80px;
+  }
 }
 
 .blog-content {
@@ -10,17 +14,38 @@
   display: flex;
   justify-content: center;
   gap: 38px;
+
+  @include desktop-min {
+    flex-wrap: wrap;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+
   &__item {
     max-width: 388px;
     padding: 24px;
     border-radius: 4px;
     border: 1px solid rgba(197, 34, 228, 0.65);
+
+    @include tablet {
+      max-width: 340px;
+    }
   }
 
   &__img {
     width: 338px;
     border-radius: 4px;
     margin-bottom: 17px;
+
+    @include tablet {
+      width: 290px;
+    }
   }
 }
 
@@ -38,10 +63,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   &__svg {
     stroke: rgba(187, 33, 230, 1);
+
+    @include mobile {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__position {
@@ -52,6 +87,10 @@
     background: linear-gradient(95.85deg, #ba21e7 5.52%, #bb21e6 95.11%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__data {
@@ -61,6 +100,10 @@
     margin-left: auto;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }
 
@@ -73,6 +116,10 @@
     margin-bottom: 16px;
 
     color: $white;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__text {
@@ -81,6 +128,10 @@
     line-height: 1.71;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 }
 
@@ -93,6 +144,10 @@
     &:hover,
     &:focus {
       background-color: rgba(137, 64, 255, 0.337254902);
+    }
+
+    @include mobile {
+      font-size: 20px;
     }
   }
 
@@ -125,10 +180,20 @@
         stroke: rgb(182, 33, 231);
       }
     }
+
+    @include mobile {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__svg {
     transition: stroke 250ms linear;
     stroke: rgba(182, 33, 231, 0.73);
+
+    @include mobile {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
