@@ -1,5 +1,9 @@
 .seller {
   padding-bottom: 148px;
+
+  @include mobile {
+    padding-bottom: 168px;
+  }
 }
 
 .seller-content {
@@ -24,10 +28,31 @@
 
     &--left {
       left: -10px;
+      @include mobile {
+        left: 80px;
+      }
     }
 
     &--right {
       right: -10px;
+
+      @include mobile {
+        right: 80px;
+      }
+    }
+
+    @include desktop-min {
+      bottom: 200px;
+    }
+
+    @include tablet {
+      bottom: 180px;
+      width: 50px;
+      height: 50px;
+    }
+
+    @include mobile {
+      bottom: -100px;
     }
   }
 }
@@ -38,9 +63,17 @@
   justify-content: center;
   gap: 36px;
 
+  @include tablet {
+    gap: 18px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
   &__item {
     position: relative;
-    width: 26%;
+    min-width: 317px;
     border-radius: 4px;
     padding: 24px;
     display: flex;
@@ -55,6 +88,21 @@
       transform: scale(1.02);
       background-color: rgba(179, 33, 231, 0.4);
     }
+
+    @include desktop-min {
+      min-width: 390px;
+    }
+
+    @include tablet {
+      min-width: 306px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      min-width: 317px;
+      margin: 0 auto;
+      gap: 20px;
+    }
   }
 
   &__link {
@@ -68,6 +116,15 @@
   &__img {
     width: 80px;
     margin-right: 20px;
+
+    @include desktop-min {
+      margin-right: 10px;
+    }
+
+    @include mobile {
+      margin-right: 0;
+      width: 120px;
+    }
   }
 
   &__title {
@@ -77,6 +134,10 @@
     margin-bottom: 10px;
 
     color: $white;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__text {
@@ -85,5 +146,9 @@
     line-height: 1.35;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 }

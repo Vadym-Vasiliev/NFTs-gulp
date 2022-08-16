@@ -872,6 +872,11 @@ main {
 .seller {
   padding-bottom: 148px;
 }
+@media screen and (max-width: 767px) {
+  .seller {
+    padding-bottom: 168px;
+  }
+}
 
 .seller-content {
   position: relative;
@@ -893,8 +898,35 @@ main {
 .seller-content__btn--left {
   left: -10px;
 }
+@media screen and (max-width: 767px) {
+  .seller-content__btn--left {
+    left: 80px;
+  }
+}
 .seller-content__btn--right {
   right: -10px;
+}
+@media screen and (max-width: 767px) {
+  .seller-content__btn--right {
+    right: 80px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .seller-content__btn {
+    bottom: 200px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .seller-content__btn {
+    bottom: 180px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seller-content__btn {
+    bottom: -100px;
+  }
 }
 
 .seller-list {
@@ -903,9 +935,19 @@ main {
   justify-content: center;
   gap: 36px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .seller-list {
+    gap: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seller-list {
+    flex-direction: column;
+  }
+}
 .seller-list__item {
   position: relative;
-  width: 26%;
+  min-width: 317px;
   border-radius: 4px;
   padding: 24px;
   display: flex;
@@ -916,6 +958,24 @@ main {
 .seller-list__item:hover, .seller-list__item:focus {
   transform: scale(1.02);
   background-color: rgba(179, 33, 231, 0.4);
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .seller-list__item {
+    min-width: 390px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .seller-list__item {
+    min-width: 306px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seller-list__item {
+    flex-direction: column;
+    min-width: 317px;
+    margin: 0 auto;
+    gap: 20px;
+  }
 }
 .seller-list__link {
   position: absolute;
@@ -928,6 +988,17 @@ main {
   width: 80px;
   margin-right: 20px;
 }
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .seller-list__img {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seller-list__img {
+    margin-right: 0;
+    width: 120px;
+  }
+}
 .seller-list__title {
   font-weight: 600;
   font-size: 18px;
@@ -935,11 +1006,21 @@ main {
   margin-bottom: 10px;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .seller-list__title {
+    font-size: 24px;
+  }
+}
 .seller-list__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.35;
   color: #d7d7d7;
+}
+@media screen and (max-width: 767px) {
+  .seller-list__text {
+    font-size: 20px;
+  }
 }
 
 .blog {
