@@ -1,11 +1,48 @@
 .history {
   padding-bottom: 148px;
+
+  @include mobile {
+    padding-bottom: 80px;
+  }
 }
 
 .history-top {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+
+  @include desktop-min {
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+  gap: 20px;
+
+  &__wrap-btn {
+    display: flex;
+
+    @include tablet {
+      display: flex;
+      gap: 40px;
+      flex-direction: row-reverse;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
   &__title {
     font-family: "Ruda";
     font-weight: 600;
@@ -13,6 +50,10 @@
     line-height: 1.21;
 
     color: $white;
+
+    @include mobile {
+      font-size: 38px;
+    }
   }
 
   &__text {
@@ -23,6 +64,16 @@
     margin-left: 123px;
 
     color: $gray;
+
+    @include tablet {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      font-size: 20px;
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
   &__btn {
@@ -48,6 +99,15 @@
         top: 100px;
       }
     }
+
+    @include tablet {
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-left: 0;
+      font-size: 24px;
+    }
   }
 
   &__svg {
@@ -67,6 +127,18 @@
   align-items: center;
   gap: 60px;
   overflow: hidden;
+
+  @include desktop-min {
+    justify-content: center;
+  }
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .history-left {
@@ -81,8 +153,16 @@
     rgba(109, 26, 241, 0.4) 96.94%
   );
 
+  @include mobile {
+    gap: 0;
+  }
+
   &__img {
     width: 379px;
+
+    @include mobile {
+      width: 320px;
+    }
   }
 
   &__bgc {
@@ -113,6 +193,11 @@
     &:focus {
       transform: rotate(0);
     }
+
+    @include mobile {
+      width: 120px;
+      height: 120px;
+    }
   }
 
   &__views {
@@ -121,6 +206,10 @@
     line-height: 1.35;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 28px;
+    }
   }
 
   &__name {
@@ -129,14 +218,35 @@
     line-height: 1.35;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 18px;
+    }
   }
 }
 
 .history-right {
   display: flex;
   gap: 60px;
+
+  @include desktop-min {
+    flex-direction: column;
+  }
+
+  @include tablet {
+    gap: 20px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+  }
   &__img {
     width: 240px;
+
+    @include mobile {
+      width: 280px;
+    }
   }
 
   &__views {
@@ -145,6 +255,10 @@
     line-height: 1.37;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__under-img {
@@ -153,5 +267,12 @@
     align-content: center;
     justify-content: center;
     gap: 12px;
+  }
+
+  &__svg {
+    @include mobile {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

@@ -587,11 +587,52 @@ main {
 .history {
   padding-bottom: 148px;
 }
+@media screen and (max-width: 767px) {
+  .history {
+    padding-bottom: 80px;
+  }
+}
 
 .history-top {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  gap: 20px;
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .history-top {
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-top {
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-top {
+    flex-direction: column;
+  }
+}
+.history-top__wrap-btn {
+  display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-top__wrap-btn {
+    display: flex;
+    gap: 40px;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-top__wrap-btn {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .history-top__title {
   font-family: "Ruda";
@@ -600,6 +641,11 @@ main {
   line-height: 1.21;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .history-top__title {
+    font-size: 38px;
+  }
+}
 .history-top__text {
   font-weight: 400;
   font-size: 16px;
@@ -607,6 +653,18 @@ main {
   max-width: 291px;
   margin-left: 123px;
   color: #d7d7d7;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-top__text {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-top__text {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 .history-top__btn {
   position: relative;
@@ -626,6 +684,17 @@ main {
   opacity: 1;
   top: 100px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-top__btn {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-top__btn {
+    margin-left: 0;
+    font-size: 24px;
+  }
+}
 .history-top__svg {
   position: absolute;
   opacity: 0;
@@ -642,6 +711,21 @@ main {
   gap: 60px;
   overflow: hidden;
 }
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .history-bottom {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-bottom {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-bottom {
+    flex-direction: column;
+  }
+}
 
 .history-left {
   position: relative;
@@ -651,8 +735,18 @@ main {
   gap: 60px;
   background: linear-gradient(112.28deg, rgba(198, 34, 228, 0.4) 2.22%, rgba(109, 26, 241, 0.4) 96.94%);
 }
+@media screen and (max-width: 767px) {
+  .history-left {
+    gap: 0;
+  }
+}
 .history-left__img {
   width: 379px;
+}
+@media screen and (max-width: 767px) {
+  .history-left__img {
+    width: 320px;
+  }
 }
 .history-left__bgc {
   width: 176px;
@@ -678,11 +772,22 @@ main {
 .history-left__border:hover, .history-left__border:focus {
   transform: rotate(0);
 }
+@media screen and (max-width: 767px) {
+  .history-left__border {
+    width: 120px;
+    height: 120px;
+  }
+}
 .history-left__views {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.35;
   color: #d7d7d7;
+}
+@media screen and (max-width: 767px) {
+  .history-left__views {
+    font-size: 28px;
+  }
 }
 .history-left__name {
   font-weight: 400;
@@ -690,13 +795,39 @@ main {
   line-height: 1.35;
   color: #d7d7d7;
 }
+@media screen and (max-width: 767px) {
+  .history-left__name {
+    font-size: 18px;
+  }
+}
 
 .history-right {
   display: flex;
   gap: 60px;
 }
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .history-right {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .history-right {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .history-right {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 .history-right__img {
   width: 240px;
+}
+@media screen and (max-width: 767px) {
+  .history-right__img {
+    width: 280px;
+  }
 }
 .history-right__views {
   font-weight: 400;
@@ -704,12 +835,23 @@ main {
   line-height: 1.37;
   color: #d7d7d7;
 }
+@media screen and (max-width: 767px) {
+  .history-right__views {
+    font-size: 24px;
+  }
+}
 .history-right__under-img {
   margin-top: 32px;
   display: flex;
   align-content: center;
   justify-content: center;
   gap: 12px;
+}
+@media screen and (max-width: 767px) {
+  .history-right__svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .nfts {
