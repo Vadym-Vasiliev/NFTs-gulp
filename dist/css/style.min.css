@@ -772,6 +772,11 @@ main {
 .gallery {
   padding-bottom: 148px;
 }
+@media screen and (max-width: 767px) {
+  .gallery {
+    padding-bottom: 80px;
+  }
+}
 
 .gallery-content__btn {
   font-family: "Ruda";
@@ -786,12 +791,33 @@ main {
 .gallery-content__btn:hover, .gallery-content__btn:focus {
   background-color: rgba(137, 64, 255, 0.337254902);
 }
+@media screen and (max-width: 767px) {
+  .gallery-content__btn {
+    font-size: 24px;
+  }
+}
 
 .gallery-list {
   margin-bottom: 48px;
   display: flex;
   justify-content: center;
   gap: 38px;
+}
+@media screen and (min-width: 992px) and (max-width: 1239px) {
+  .gallery-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .gallery-list__item {
   position: relative;
@@ -804,6 +830,11 @@ main {
 }
 .gallery-list__item:hover, .gallery-list__item:focus {
   transform: scale(1.02);
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery-list__item {
+    max-width: 340px;
+  }
 }
 .gallery-list__link {
   position: absolute;
@@ -831,6 +862,18 @@ main {
 .gallery-list-top__img--active {
   width: 232px;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery-list-top__img--active {
+    width: 178px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery-list-top__img--active {
+    width: 198px;
+    object-fit: cover;
+  }
+}
 .gallery-list-top__border {
   border: 1px solid #ffffff;
   border-radius: 4px;
@@ -857,16 +900,32 @@ main {
   margin-bottom: 12px;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .gallery-list-bottom__title {
+    font-size: 24px;
+  }
+}
 .gallery-list-bottom__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.37;
   color: #d7d7d7;
 }
+@media screen and (max-width: 767px) {
+  .gallery-list-bottom__text {
+    font-size: 24px;
+  }
+}
 .gallery-list-bottom__span {
   width: 20px;
   height: 20px;
   margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .gallery-list-bottom__svg {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 .seller {

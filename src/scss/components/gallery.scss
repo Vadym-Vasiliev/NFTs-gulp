@@ -1,5 +1,9 @@
 .gallery {
   padding-bottom: 148px;
+
+  @include mobile {
+    padding-bottom: 80px;
+  }
 }
 
 .gallery-content {
@@ -18,6 +22,10 @@
     &:focus {
       background-color: rgba(137, 64, 255, 0.337254902);
     }
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 }
 
@@ -26,6 +34,19 @@
   display: flex;
   justify-content: center;
   gap: 38px;
+
+  @include desktop-min {
+    flex-wrap: wrap;
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__item {
     position: relative;
@@ -39,6 +60,10 @@
     &:hover,
     &:focus {
       transform: scale(1.02);
+    }
+
+    @include tablet {
+      max-width: 340px;
     }
   }
 
@@ -68,6 +93,16 @@
     border-radius: 4px;
     &--active {
       width: 232px;
+
+      @include tablet {
+        width: 178px;
+        object-fit: cover;
+      }
+
+      @include mobile {
+        width: 198px;
+        object-fit: cover;
+      }
     }
   }
 
@@ -100,6 +135,10 @@
     margin-bottom: 12px;
 
     color: $white;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__text {
@@ -108,6 +147,10 @@
     line-height: 1.37;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &__span {
@@ -115,5 +158,12 @@
     height: 20px;
 
     margin-left: auto;
+  }
+
+  &__svg {
+    @include mobile {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
