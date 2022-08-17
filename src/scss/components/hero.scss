@@ -223,8 +223,13 @@
   }
 
   &__svg {
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
+
+    @include mobile {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   &__watch {

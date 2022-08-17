@@ -780,11 +780,56 @@
     <!-- BACKDROP-MODAL -->
     <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="backdrop-modal">
-        <div class="modal-form">
+        <form class="modal-form">
           <button class="modal-form__btn" data-modal-close>
             <span class="modal-form__cross"></span>
           </button>
-        </div>
+
+          <div class="modal-form__content">
+            <label class="modal-form__label" for="name">Імя</label>
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+          </div>
+          <div class="modal-form__content">
+            <label class="modal-form__label" for="tel">Телефон</label>
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              id="tel"
+              placeholder=" "
+            />
+          </div>
+          <div class="modal-form__content">
+            <label class="modal-form__label" for="mail">Пошта</label>
+            <input
+              class="modal-form__input"
+              type="email"
+              name="name"
+              id="mail"
+              placeholder=" "
+            />
+          </div>
+          <div class="modal-form__content">
+            <label class="modal-form__label" for="comment">Коментарій</label>
+            <textarea
+              class="modal-form__comment"
+              name="comment"
+              id="comment"
+              rows="6"
+              placeholder="Напишіть коментар"
+            ></textarea>
+          </div>
+
+          <button class="btn modal-form__submit" type="submit">
+            Відправити
+          </button>
+        </form>
       </div>
     </div>
 
