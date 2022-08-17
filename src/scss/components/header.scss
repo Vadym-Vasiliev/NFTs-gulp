@@ -8,11 +8,95 @@
   padding-bottom: 21px;
 
   background-color: rgba(0, 0, 0, 0.593);
+
+  @include mobile {
+    padding-top: 21px;
+  }
+
+  &__btn {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      .header__span,
+      .header__span::before,
+      .header__span::after {
+        background-color: #8940ffbf;
+      }
+    }
+
+    &.is-open {
+      .header__span::before {
+        transform: rotate(-45deg);
+      }
+      .header__span::after {
+        transform: rotate(45deg);
+      }
+      .header__span {
+        height: 0;
+      }
+    }
+
+    @include tablet {
+      display: none;
+    }
+    @include desktop-min {
+      display: none;
+    }
+    @include desktop-max {
+      display: none;
+    }
+  }
+
+  &__span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+
+    transition: background-color 250ms linear, transform 250ms linear;
+
+    background-color: #8a40ff;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 4px;
+      display: block;
+      transition: background-color 250ms linear, transform 250ms linear;
+
+      background-color: #8a40ff;
+    }
+
+    &::before {
+      transform: translateY(12px);
+    }
+
+    &::after {
+      transform: translateY(-12px);
+    }
+  }
 }
 
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   &__link {
     font-family: "Ruda";
     font-weight: 700;
@@ -24,8 +108,15 @@
 
     color: $white;
 
-    &__img {
-      width: 32px;
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+  &__img {
+    width: 32px;
+
+    @include mobile {
+      width: 40px;
     }
   }
 }
@@ -34,6 +125,23 @@
   display: flex;
   gap: 48px;
   margin-left: 374px;
+
+  @include desktop-min {
+    margin-left: 160px;
+  }
+
+  @include tablet {
+    margin-left: 100px;
+    gap: 24px;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 24px;
+  }
 
   &__link {
     position: relative;
@@ -63,6 +171,10 @@
       transform: scaleX(1);
       transform-origin: bottom left;
     }
+
+    @include mobile {
+      font-size: 34px;
+    }
   }
 }
 
@@ -71,11 +183,29 @@
   gap: 24px;
   margin-left: auto;
 
+  @include tablet {
+    flex-direction: column-reverse;
+  }
+
+  @include mobile {
+    margin-left: 0;
+    flex-direction: column;
+  }
   &__btns {
     &--login {
       position: relative;
       background: transparent;
       padding: 0;
+
+      @include mobile {
+        min-width: 100px;
+        margin: 0 auto;
+      }
+
+      @include tablet {
+        min-width: 40px;
+        margin: 0 auto;
+      }
 
       &::before {
         content: "";
@@ -90,6 +220,14 @@
         transform-origin: bottom left;
 
         background-color: #8a40ff;
+
+        @include mobile {
+          bottom: -8px;
+        }
+
+        @include tablet {
+          bottom: -4px;
+        }
       }
 
       &:hover::before,
@@ -105,6 +243,40 @@
       &:focus {
         background-color: #8940ff56;
       }
+    }
+  }
+}
+
+.menu-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop-min {
+    gap: 50px;
+  }
+
+  @include desktop-max {
+    gap: 100px;
+  }
+
+  &.is-open {
+    @include mobile {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-color: $main-bg;
     }
   }
 }

@@ -3,13 +3,18 @@ body {
 
   background-color: $main-bg;
 
-  &.modal-open {
+  &.modal-open,
+  &.menu-open {
     overflow: hidden;
   }
 }
 
 main {
   padding-top: 221px;
+
+  @include mobile {
+    padding-top: 131px;
+  }
 }
 
 .container {
@@ -45,4 +50,8 @@ main {
     rgba(153, 30, 234, 0.4) 52.66%,
     rgba(73, 23, 246, 0.4) 93.7%
   );
+
+  @include mobile {
+    font-size: 34px;
+  }
 }
