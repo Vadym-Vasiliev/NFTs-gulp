@@ -1,58 +1,98 @@
 .hero {
   padding-bottom: 207px;
 
+  @include tablet {
+    padding-bottom: 821px;
+  }
+
+  @include mobile {
+    padding-bottom: 100px;
+  }
+
+  &__wrap {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
   &__img {
     position: absolute;
     border-radius: 8px;
 
     &--big {
       width: 499px;
-      left: 681px;
+      left: 183px;
       bottom: -59px;
 
       @include desktop-min {
         z-index: -1;
-        left: 440px;
+        left: -30px;
+      }
+
+      @include tablet {
+        bottom: -700px;
+        left: 0;
       }
     }
 
     &--cat {
       width: 140px;
-      left: 615px;
+      left: 116px;
       top: -58px;
 
       @include desktop-min {
-        left: 500px;
+        left: 20px;
+      }
+      @include tablet {
+        top: 300px;
+        left: -100px;
       }
     }
 
     &--purple {
       width: 72px;
-      left: 916px;
+      left: 417px;
       top: -58px;
 
       @include desktop-min {
         display: none;
       }
+
+      @include tablet {
+        top: 100px;
+        left: 50px;
+      }
     }
 
     &--green {
       width: 248px;
-      left: 1073px;
+      left: 574px;
       top: 0;
 
       @include desktop-min {
-        left: 665px;
+        left: 200px;
+      }
+
+      @include tablet {
+        top: 100px;
+        left: 300px;
       }
     }
 
     &--red {
       width: 130px;
-      left: 1231px;
+      left: 732px;
       bottom: 20px;
 
       @include desktop-min {
-        left: 765px;
+        left: 330px;
+      }
+
+      @include tablet {
+        bottom: -650px;
+        left: 480px;
       }
     }
   }
@@ -60,6 +100,17 @@
 
 .hero-left {
   position: relative;
+
+  @include tablet {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @include mobile {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   &__top {
     margin-bottom: 40px;
   }
@@ -95,12 +146,25 @@
     max-width: 442px;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 22px;
+    }
   }
 
   &__center {
     display: flex;
     align-items: center;
     margin-bottom: 76px;
+
+    @include tablet {
+      justify-content: center;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 50px;
+    }
   }
 
   &__btn {
@@ -115,6 +179,11 @@
     &:hover,
     &:focus {
       background-color: rgba(137, 64, 255, 0.337254902);
+    }
+
+    @include mobile {
+      font-size: 24px;
+      margin-right: 0;
     }
   }
 
@@ -146,6 +215,16 @@
     justify-content: center;
 
     transition: border-radius 250ms linear;
+
+    @include mobile {
+      width: 66px;
+      height: 66px;
+    }
+  }
+
+  &__svg {
+    width: 22px;
+    height: 22px;
   }
 
   &__watch {
@@ -170,6 +249,25 @@
 
       background-color: #8a40ff;
     }
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+}
+
+.hero-right {
+  position: relative;
+  width: 500px;
+  @include desktop-min {
+    margin-left: auto;
+  }
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    display: none;
   }
 }
 
@@ -183,9 +281,21 @@
 
   background-color: rgba(255, 255, 255, 0.13);
 
+  @include mobile {
+    max-width: 367px;
+    gap: 50px;
+    padding: 24px 24px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
   &__item {
     max-width: 83px;
     text-align: center;
+
+    @include mobile {
+      max-width: 103px;
+    }
   }
 
   &__span {
@@ -197,6 +307,10 @@
     display: block;
 
     color: $white;
+
+    @include mobile {
+      font-size: 40px;
+    }
   }
 
   &__text {
@@ -205,5 +319,9 @@
     line-height: 1.37;
 
     color: $gray;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 }
