@@ -673,7 +673,7 @@ main {
 }
 .hero__img--green {
   width: 248px;
-  left: 574px;
+  left: 468px;
   top: 0;
 }
 @media screen and (min-width: 992px) and (max-width: 1239px) {
@@ -689,7 +689,7 @@ main {
 }
 .hero__img--red {
   width: 130px;
-  left: 732px;
+  left: 586px;
   bottom: 20px;
 }
 @media screen and (min-width: 992px) and (max-width: 1239px) {
