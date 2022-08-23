@@ -2102,6 +2102,9 @@ main {
   border: 1px solid #ccc;
   transition: 250ms linear;
 }
+.modal-form__input.error {
+  border-color: red;
+}
 .modal-form__comment {
   resize: none;
   outline: none;

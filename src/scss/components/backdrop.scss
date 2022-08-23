@@ -143,6 +143,10 @@
     border: 1px solid #ccc;
 
     transition: 250ms linear;
+
+    &.error {
+      border-color: red;
+    }
   }
 
   &__comment {
