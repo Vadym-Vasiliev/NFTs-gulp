@@ -1,5 +1,5 @@
 let form = document.querySelector(".footer-list__form");
-let formInput = document.querySelector(".footer-list__input");
+let formInputs = document.querySelectorAll(".footer-list__input");
 let formInputEmail = document.querySelector(".footer-list__input-email");
 
 //перевірка пошти на символи
@@ -14,9 +14,9 @@ form.onsubmit = function () {
   let emailValue = formInputEmail.value;
 
   //вертає ретюрн фолс якщо інпут пустий
-  let emptyInput = Array.from(formInput).filter((input) => input.value === "");
+  let emptyInput = Array.from(formInputs).filter((input) => input.value === "");
 
-  formInput.forEach(function (input) {
+  formInputs.forEach(function (input) {
     if (input.value === "") {
       input.classList.add("error");
     } else {
