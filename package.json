@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/Vadym-Vasiliev/first-gulp#readme",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

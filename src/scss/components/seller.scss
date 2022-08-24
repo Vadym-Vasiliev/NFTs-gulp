@@ -6,58 +6,8 @@
   }
 }
 
-.seller-content {
-  position: relative;
-  &__btn {
-    position: absolute;
-    bottom: 120px;
-    width: 60px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-
-    transition: background-color 250ms linear;
-
-    background-color: rgba(255, 255, 255, 0.1);
-
-    &:hover,
-    &:focus {
-      background-color: rgba(179, 33, 231, 0.4);
-    }
-
-    &--left {
-      left: -10px;
-      @include mobile {
-        left: 80px;
-      }
-    }
-
-    &--right {
-      right: -10px;
-
-      @include mobile {
-        right: 80px;
-      }
-    }
-
-    @include desktop-min {
-      bottom: 200px;
-    }
-
-    @include tablet {
-      bottom: 180px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include mobile {
-      bottom: -100px;
-    }
-  }
-}
-
 .seller-list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,5 +100,61 @@
     @include mobile {
       font-size: 20px;
     }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 0;
+  z-index: 1;
+
+  transition: background-color 250ms linear;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(179, 33, 231, 0.4);
+
+    @include desktop-min {
+      bottom: 200px;
+    }
+
+    @include tablet {
+      bottom: 180px;
+      width: 50px;
+      height: 50px;
+    }
+
+    @include mobile {
+      bottom: -100px;
+    }
+  }
+
+  &::before {
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.slick-prev {
+  left: 0;
+
+  &::before {
+    content: "\276E";
+  }
+}
+
+.slick-next {
+  right: 0;
+  &::before {
+    content: "\276F";
   }
 }
