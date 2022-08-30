@@ -89,8 +89,8 @@
     color: $gray;
     background-color: transparent;
 
-    &-email.error {
-      border-color: red;
+    &.error {
+      border: 1px solid red;
     }
 
     @include desktop-min {
